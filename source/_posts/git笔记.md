@@ -19,17 +19,17 @@ Create a new branch named &lt;new_branch&gt; and start it at &lt;start_point&gt;
 ## submodule
 >子模块是一个独立的git 仓库，如果用第三方需要fork之后使用fork的项目,不然修改的内容没办法同步，只能提交在本地仓库
 ### COMMANDS
-#### &emsp; add [-b &lt;branch&gt;] [-f|--force] [--name &lt;name&gt;] [--reference &lt;repository&gt;] [--depth &lt;depth&gt;] [--] &lt;repository&gt; [&lt;path&gt;]
+#### &emsp; add [-b &lt;branch&gt;] [-f|\-\-force] [\-\-name &lt;name&gt;] [\-\-reference &lt;repository&gt;] [\-\-depth &lt;depth&gt;] [\-\-] &lt;repository&gt; [&lt;path&gt;]
 >添加子模块
-#### &emsp; init [--] [&lt;path&lt;…​]
+#### &emsp; init [\-\-] [&lt;path&lt;…​]
 >初始化子模块
-#### &emsp; update [--init] [--remote] [-N|--no-fetch] [--[no-]recommend-shallow] [-f|--force] [--checkout|--rebase|--merge] [--reference &lt;repository&gt;] [--depth &lt;depth&gt;] [--recursive] [--jobs &lt;n&gt;] [--] [&lt;path&gt;…​]
+#### &emsp; update [\-\-init] [\-\-remote] [-N|\-\-no-fetch] [\-\-[no-]recommend-shallow] [-f|\-\-force] [\-\-checkout|\-\-rebase|\-\-merge] [\-\-reference &lt;repository&gt;] [\-\-depth &lt;depth&gt;] [\-\-recursive] [\-\-jobs &lt;n&gt;] [\-\-] [&lt;path&gt;…​]
 >拉取子模块数据数据
 ### OPTIONS
-#### &emsp;--name
+#### &emsp;\-\-name
 >This option is only valid for the add command. It sets the submodule’s name to the given string instead of defaulting to its path. The name must be valid as a directory name and may not end with a /.
 ## clone
 ### OPTIONS
-#### &emsp; --recurse-submodules[=<pathspec]
+#### &emsp; \-\-recurse-submodules[=<pathspec]
 >克隆项目完成后自动使用默认配置克隆子模块。如果没有子模块配置则会忽略
->After the clone is created, initialize and clone submodules within based on the provided pathspec. If no pathspec is provided, all submodules are initialized and cloned. Submodules are initialized and cloned using their default settings. The resulting clone has submodule.active set to the provided pathspec, or "." (meaning all submodules) if no pathspec is provided. This is equivalent to running git submodule update --init --recursive immediately after the clone is finished. This option is ignored if the cloned repository does not have a worktree/checkout (i.e. if any of --no-checkout/-n, --bare, or --mirror is given)
+>After the clone is created, initialize and clone submodules within based on the provided pathspec. If no pathspec is provided, all submodules are initialized and cloned. Submodules are initialized and cloned using their default settings. The resulting clone has submodule.active set to the provided pathspec, or "." (meaning all submodules) if no pathspec is provided. This is equivalent to running git submodule update \-\-init \-\-recursive immediately after the clone is finished. This option is ignored if the cloned repository does not have a worktree/checkout (i.e. if any of \-\-no-checkout/-n, \-\-bare, or \-\-mirror is given)
