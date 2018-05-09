@@ -2,9 +2,9 @@
 title: mdtemplate
 date: 2018-05-08 00:00:29
 categories:
-- example
+- html
 tags:
-- md
+- notes
 ---
 # 欢迎使用 Cmd Markdown 编辑阅读器
 

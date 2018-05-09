@@ -1,7 +1,10 @@
 ---
 title: git笔记
 date: 2018-05-08 17:17:59
-tags: notes
+categories:
+- shell
+tags: 
+- notes
 ---
 >[] :括号 中的内容为可选项，&lt;&gt; :箭头符号中间的内容为必选项
 ## checkout
